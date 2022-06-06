@@ -10,7 +10,8 @@ public:
     Punto();
     Punto(int a, int b);
     Punto operator + (Punto *p); // paso por apuntador
-    //Punto operator + (Punto &p); // paso por referencia
+    Punto operator + (Punto &p); // paso por referencia
+    Punto operator + (Punto p); // paso por valor
 };
 
 #endif

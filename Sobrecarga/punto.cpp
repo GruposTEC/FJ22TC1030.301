@@ -25,9 +25,16 @@ Punto Punto::operator + (Punto *p){
     return res;
 }
 
-/*Punto Punto::operator + (Punto &p){
+Punto Punto::operator + (Punto &p){
     int xf = x + p.x;
     int yf = y + p.y;
     Punto res(xf,yf);
     return res;
-}*/
+}
+
+Punto Punto::operator + (Punto p){
+    int xf = x + p.x;
+    int yf = y + p.y;
+    Punto res(xf,yf);
+    return res;
+}
