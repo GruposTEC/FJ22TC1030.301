@@ -1,16 +1,22 @@
-#ifndef CASILLA_H
-#define CASILLA_H
+#ifndef CASILLA_H_
+#define CASILLA_H_
 
-class Casilla {
 
+class Casilla{
+
+    private:
+        char simbolo;
         int posicion;
-        char dato;
 
     public:
-        bool ocupado();
-        void setData(char d);
-        char getData();
 
+        Casilla();
+        char getSimbolo();
+        int getPosicion();
+        void setSimbolo(char sim);
+        void setPosicion(int pos);
+        bool ocupada();
+        
 };
 
 #endif

@@ -1,0 +1,1 @@
+jugador.o: jugador.cpp

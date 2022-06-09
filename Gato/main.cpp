@@ -1,15 +1,12 @@
 #include <iostream>
 #include "casilla.h"
+#include "tablero.h"
 
-using namespace std;
+int main()
+{
+    Tablero tablero;
 
-int main(){
-        
-    Casilla ejemplo1;
-    ejemplo1.setData('x');
-    cout << ejemplo1.ocupado() << endl;
-    ejemplo1.setData('o');
-    cout << ejemplo1.ocupado() << endl;
+    tablero.leerTablero();
 
-    
+    return 0;
 }

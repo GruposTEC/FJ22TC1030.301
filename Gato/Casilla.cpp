@@ -1,25 +1,45 @@
 #include "casilla.h"
 #include <iostream>
-using std::cout;
-using std::endl;
-using std::string;
-using std::cin;
+#include <string>
 
-bool Casilla::ocupado() {
+using std::cout;
+using std::string;
+using std::endl;
+
+
+Casilla::Casilla()
+{
     
-    if(dato == 'x' || dato == 'o'){ //Poner espacio para referirse que esta vacio  
+}
+
+char Casilla::getSimbolo()
+{
+    return simbolo;
+}
+
+int Casilla::getPosicion()
+{
+    return posicion;
+}
+void Casilla::setSimbolo(char sim)
+{
+    simbolo = sim;
+}
+
+void Casilla::setPosicion(int pos)
+{
+    posicion = pos;
+}
+
+bool Casilla::ocupada()
+{
+    if(simbolo =! ' ')
+    {
         return true;
     }
-    else {
+
+    else
+    {
         return false;
     }
-}
-
-//métodos
-void Casilla::setData(char d) {
-    dato = d;
-}
-
-char Casilla::getData() {
-    return dato;
 }
